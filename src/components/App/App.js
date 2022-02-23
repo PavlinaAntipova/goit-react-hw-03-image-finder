@@ -63,9 +63,9 @@ class App extends Component {
   }
 
 
-  increasePage = () => {
+increasePage = () => {
     this.setState(prevState => {
-      return { page: prevState.page += 1 }
+      return { page: prevState.page + 1 }
     });
   }
 
