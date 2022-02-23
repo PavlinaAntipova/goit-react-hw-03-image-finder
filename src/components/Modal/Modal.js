@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { createPortal } from "react-dom";
+import PropTypes from 'prop-types';
+
 
 import s from "./Modal.module.css"
 
@@ -36,6 +38,7 @@ window.scrollTo(0,0);
 
 
   render() {
+    console.log(this.props.children);
     return createPortal(<div className={s.overlay} onClick={this.onOverlay}>
       <div className={s.modal}>
         {this.props.children}
@@ -46,4 +49,9 @@ window.scrollTo(0,0);
 }
 
 export default Modal;
+
+Modal.propTypes = {
+  toggleModal: PropTypes.func,
+  children: PropTypes.object
+}
 

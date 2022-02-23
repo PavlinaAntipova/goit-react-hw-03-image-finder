@@ -104,7 +104,8 @@ render() {
        
         {totalRequests !== page && <Button increasePage={this.increasePage} />}
       </>}
-        {isLoading && <div className="loader"><Oval height="100" width="100" color='#00a3ff' ariaLabel='loading' /></div>}
+
+      {isLoading && <div className="loader"><Oval height="100" width="100" color='#00a3ff' ariaLabel='loading' /></div>}
 
       {showModal && <Modal toggleModal={this.toggleModal}><img src={modalItem.largeImageURL} alt={modalItem.tags} /></Modal>}
         

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 import ImageGalleryItem from "../ImageGalleryItem";
 
@@ -12,3 +13,10 @@ function ImageGallery({images, toggleModal, getItemId}) {
 }
 
 export default ImageGallery;
+
+ImageGallery.propTypes = {
+    images: PropTypes.array,
+    toggleModal: PropTypes.func,
+    getItemId: PropTypes.func
+
+}
