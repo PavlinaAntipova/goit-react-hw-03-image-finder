@@ -24,7 +24,8 @@ class Searchbar extends Component {
 
         return (
             <header className={s.header}>
-                <h1 className={s.mainTitle}>Find.<span>Photo</span></h1>
+                <a href="index.html"><h1 className={s.mainTitle}>Find.<span>Photo</span></h1></a>
+                
                 <form className={s.form} onSubmit={e => {
                     e.preventDefault();
 

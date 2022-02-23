@@ -63,3 +63,8 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+a {
+  display: block;
+  text-decoration: none;
+}
