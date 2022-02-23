@@ -87,8 +87,9 @@ class App extends Component {
 
 render() {
   const { imgs, isLoading, error, showModal, idItem, page } = this.state;
+  // eslint-disable-next-line array-callback-return
   const modalItem = imgs.find(img => {
-    if (img.id === idItem) {
+    if (idItem === img.id) {
       return img;
     }
   });
