@@ -29,7 +29,11 @@ class App extends Component {
   componentDidUpdate(prevProps, prevState) {
     const { searchQuery, page } = this.state;
     
-    if (searchQuery !== prevState.searchQuery || page !== prevState.page) {
+    if (searchQuery !== prevState.searchQuery) {
+      this.loadImages();
+    }
+    
+     if (page !== prevState.page) {
       this.loadImages();
   }
   }
