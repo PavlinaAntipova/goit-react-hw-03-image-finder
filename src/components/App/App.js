@@ -24,7 +24,6 @@ class App extends Component {
     isLoading: false,
     showModal: false,
     idModalItem: null,
-   
   }
 
   componentDidUpdate(prevProps, prevState) {
